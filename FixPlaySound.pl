@@ -35,7 +35,7 @@ sub process {
 	$^I = ".bak";
 	while (<>)
 	{
-		if (/(^.*PlaySound\()"(\w+)"(\).*)/) {
+		if (/(^.*PlaySound\()"(\w+)"(.*)/) {
 		# grab 3 pieces, before, symbol, and after
 			my $before = $1;
 			my $symbol = $2;
